@@ -3,7 +3,9 @@
 </script>
 
 <style>
-    /* style */
+    header {
+        height: 80vh;
+    }
 
 </style>
 
