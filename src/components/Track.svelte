@@ -45,15 +45,17 @@
         padding: 0;
         margin: 0;
         opacity: .8;
+        background-color: var(--bg-color-1);
+        align-self: center;
         grid-column: 2 / span 2; }
 
     .track-name {
-        align-self: bottom;
+        /* align-self: center; */
         /* justify-self: right */ }
 
     .artist-name {
-        align-self: center;
-        align-items: bottom;
+        /* align-self: center; */
+        /* align-items: bottom; */
         
        }
 
@@ -67,14 +69,14 @@
 </style>
 
 <div class="track">
-    <div class="track-image"> A </div>
+    <div class="track-image"></div>
 
-    <h3 class="artist-name"> hey long text text</h3>
-    <h3 class="track-name">text</h3>
+    <h3 class="artist-name">&nbsp;</h3>
+    <h3 class="track-name">&nbsp;</h3>
 
     <span class="icon"></span>
     <span class="icon"></span>
 
-    <div class="media-controller">M</div>
+    <div class="media-controller"></div>
 
 </div>
