@@ -1,6 +1,7 @@
 <script>
-    import Topracks from '../components/Top_Tracks.svelte'
+    import Tracks from '../components/Tracks.svelte'
     import Header from '../components/Header.svelte'
+    import AboutOverview from '../components/AboutOverview.svelte'
 </script>
 
 <style></style>
@@ -11,6 +12,8 @@
 
 <Header />
 
-<Topracks />
+<AboutOverview />
+
+<Tracks />
 
 
