@@ -1,3 +1,26 @@
+<script charset="utf-8">
+   import MediaController from './media-controller.svelte' 
+    import { createEventDispatcher } from 'svelte';
+
+    export let track;
+    console.log(track)
+
+	const dispatch = createEventDispatcher();
+
+	function handleMediaControoler(e) {
+    
+        const tracksDOM = e.target.closest('.track-list .inner')
+        const audioDOM = e.target.closest('.media-controller').querySelector('audio')
+    
+		dispatch('stop', {
+			node: tracksDOM
+		});
+
+        audioDOM.play()
+	}
+    
+
+</script>
 
 <style>
     .track {
@@ -31,6 +54,8 @@
         grid-row: 1 / -1;
         align-self: center;
         justify-self: right;
+        margin: 0;
+        padding: 0;
 
         display: grid;
         justify-content: center;
@@ -38,8 +63,8 @@
 
         border-radius: 50%;
         width: 4rem;
-        height: 4rem;
-        background: var(--bg-color-1) }
+        height: 4rem; }
+        /* background: var(--bg-color-1) } */
     
     .artist-name, .track-name {
         padding: 0;
@@ -49,15 +74,15 @@
         align-self: center;
         grid-column: 2 / span 2; }
 
-    .track-name {
-        /* align-self: center; */
-        /* justify-self: right */ }
+    /* .track-name { */
+    /*     /1* align-self: center; *1/ */
+    /*     /1* justify-self: right *1/ } */
 
-    .artist-name {
-        /* align-self: center; */
-        /* align-items: bottom; */
+    /* .artist-name { */
+    /*     /1* align-self: center; *1/ */
+    /*     /1* align-items: bottom; *1/ */
         
-       }
+    /*    } */
 
     .icon {
         height: 1.5rem;
@@ -77,6 +102,13 @@
     <span class="icon"></span>
     <span class="icon"></span>
 
-    <div class="media-controller"></div>
+    <figure on:click={handleMediaControoler} class="media-controller"> 
+         <audio>
+             <source src={track.preview_url} type="audio/ogg" />
+            Your browser does not support the audio element.
+        </audio> 
+        <MediaController on:click />
+
+    </figure>
 
 </div>

@@ -4,6 +4,9 @@
 
 <style>
     header {
+          display: grid;
+          justify-content: center;
+          align-content: center;
         height: 80vh;
     }
 

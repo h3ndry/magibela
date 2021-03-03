@@ -49,11 +49,22 @@ onMount(async () => {
 });
     
 
-	/* Tracks.subscribe(value => { */
-	/* 	TracksList = value; */
-	/* }); */
+	Tracks.subscribe(value => {
+        // first 4 track
+        const first = value.slice(0,4)
+		TracksList = first;
+	});
 
-    TracksList = [1, 2, 3, 4]
+function handleClick(e) {
+        const tracksDOM = e.detail.node.querySelectorAll('audio')
+        console.log(tracksDOM, 'I am from tracks')
+        tracksDOM.forEach(trackDOM => (trackDOM.pause()))
+    /* const audio = e.target.closest('.media-controller').querySelector('audio') */
+    /* audio.play() */
+        /* console.log(e.target.previousSibling) */
+            }
+
+
 
 
 
@@ -82,21 +93,20 @@ onMount(async () => {
         <h2>Top Songs on Spotify</h2>
         <button>show all</button>
 
-        {#each TracksList as track}
-            <Track />
-        {/each}
+        
 
-<!--        {#if loading && !erro}
+        {#if loading && !erro}
             <p>...waiting</p>
+
         {:else if !loading && !erro}
 
-            {#each TracksList as Track}
-                <p>{Track.name}</p> 
+            {#each TracksList as track (track.id)}
+                <Track on:stop={handleClick} track={track} />
             {/each}
 
         {:else if !loading && erro}
             <p>...conection erro</p>
-{/if} -->
+{/if}
 
 
     </div>
