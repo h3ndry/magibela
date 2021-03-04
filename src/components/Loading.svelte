@@ -1,35 +1,3 @@
-<script charset="utf-8">
-   import MediaController from './media-controller.svelte' 
-    import { createEventDispatcher } from 'svelte';
-
-    export let track;
-    let isPlaying = false
-
-	const dispatch = createEventDispatcher();
-
-	function handleMediaControoler(e) {
-        const tracksDOM = e.target.closest('.track-list .inner')
-        const audioDOM = e.target.closest('.media-controller').querySelector('audio')
-    
-        /* console.log(!audioDOM.paused) */
-        if (!audioDOM.paused) {
-
-            audioDOM.pause()
-            isPlaying = false
-
-            return
-        }
-    
-		dispatch('stop', {
-			node: tracksDOM
-		});
-
-        audioDOM.play()
-        isPlaying = true
-	}
-    
-
-</script>
 
 <style>
     .track {
@@ -72,8 +40,8 @@
 
         border-radius: 50%;
         width: 4rem;
-        height: 4rem; }
-        /* background: var(--bg-color-1) } */
+        height: 4rem; 
+        background: var(--bg-color-1) }
     
     .artist-name, .track-name {
         padding: 0;
@@ -111,13 +79,6 @@
     <span class="icon"></span>
     <span class="icon"></span>
 
-    <figure on:click={handleMediaControoler} class="media-controller"> 
-         <audio>
-             <source src={track.preview_url} type="audio/ogg" />
-            Your browser does not support the audio element.
-        </audio> 
-        <MediaController isPlaying={isPlaying} on:click />
-
-    </figure>
+    <figure class="media-controller"></figure>
 
 </div>

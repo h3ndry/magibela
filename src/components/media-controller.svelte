@@ -1,3 +1,11 @@
+<script>
+
+    export let isPlaying
+    
+    console.log(isPlaying)
+
+</script>
+
 <style type="text/css" media="screen">
     svg {
         width: 4rem;
@@ -9,7 +17,7 @@
         display: inline;
         fill: none;
         stroke: orangered;
-        stroke-width: 5;
+        stroke-width: 6;
         stroke-miterlimit: 4;
         stroke-opacity: .8;
 
@@ -17,20 +25,27 @@
 
     svg path.play {
         fill: orangered;
-        display: inline;
-        fill-opacity: 1;
+        fill-opacity: 0;
     }
     
-    svg g.pause {
-        display: none;
-    }
+    /* svg g.pause { */
+    /* } */
+
     svg g.pause path {
         fill: none;
+        display: none;
         stroke: orangered;
-        stroke-width: 5;
+        stroke-width: 6;
         stroke-linecap: round;
 
+    }
 
+    svg path.show {
+        fill-opacity: 1 !important;
+        display: inline;
+    }
+    svg g.show path {
+        display: inline;
     }
     
 </style>
@@ -54,6 +69,7 @@
      transform="rotate(-90)" />
   <g
       class="pause"
+    class:show="{isPlaying === true}"
      transform="translate(-0.17777825,-0.18127833)">
     <path
        d="M 51.271205,42.984758 V 92.552532"
@@ -65,6 +81,7 @@
   </g>
 
   <path
+    class:show="{isPlaying == false}"
       class="play"
      transform="translate(5,0)"
      d="m 86.259187,63.361495 -31.584,-22.646 c -3.369,-2.416 -8.059,-0.008 -8.059,4.138 v 45.293 c 0,4.146 4.69,6.554 8.059,4.138 l 31.583,-22.647 c 2.834,-2.031 2.834,-6.244 10e-4,-8.276 z" />

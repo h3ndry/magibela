@@ -2,10 +2,12 @@
     import { onMount, onDestroy } from 'svelte';
     import { Tracks } from '../store/top_tracks';
     import Track from './Track.svelte'
+    import Loading from './Loading.svelte'
 
     let TracksList = [];
     let loading = true;
     let erro = false
+    let LoadingList = [1, 2, 3, 4]
 
     /* console.log(photos) */
 
@@ -57,7 +59,6 @@ onMount(async () => {
 
 function handleClick(e) {
         const tracksDOM = e.detail.node.querySelectorAll('audio')
-        console.log(tracksDOM, 'I am from tracks')
         tracksDOM.forEach(trackDOM => (trackDOM.pause()))
     /* const audio = e.target.closest('.media-controller').querySelector('audio') */
     /* audio.play() */
@@ -96,7 +97,11 @@ function handleClick(e) {
         
 
         {#if loading && !erro}
-            <p>...waiting</p>
+
+            {#each LoadingList as track }
+                <Loading />
+            {/each}
+
 
         {:else if !loading && !erro}
 
