@@ -1,8 +1,14 @@
 <script>
 
     export let isPlaying
+    export let ellipseLength
+    export let progress
+    console.log(progress)
     
-    console.log(isPlaying)
+    const outline = document.querySelector("svg .ellipse-overlay")
+ const test = (e)=> {
+    console.log(e, 'hey')
+}
 
 </script>
 
@@ -19,7 +25,7 @@
         stroke: orangered;
         stroke-width: 6;
         stroke-miterlimit: 4;
-        stroke-opacity: .8;
+        /* stroke-opacity: .8; */
 
     }
 
@@ -47,6 +53,15 @@
     svg g.show path {
         display: inline;
     }
+
+    svg .ellipse-overlay {
+        stroke: orangered;
+        /* opacity: 0; */
+    }
+    svg .ellipse {
+        stroke: white;
+        opacity: .5;
+    }
     
 </style>
 
@@ -61,7 +76,7 @@
 </defs>
 
   <ellipse
-     id="path1612"
+      class="ellipse"
      cx="-67.499992"
      cy="67.5"
      rx="61.500046"
@@ -87,7 +102,9 @@
      d="m 86.259187,63.361495 -31.584,-22.646 c -3.369,-2.416 -8.059,-0.008 -8.059,4.138 v 45.293 c 0,4.146 4.69,6.554 8.059,4.138 l 31.583,-22.647 c 2.834,-2.031 2.834,-6.244 10e-4,-8.276 z" />
 
   <ellipse
-     id="path1612-7"
+      class="ellipse-overlay"
+      stroke-dasharray="{ellipseLength}"
+      stroke-dashoffset="{progress}"
      cx="-67.499992"
      cy="67.5"
      rx="61.500046"

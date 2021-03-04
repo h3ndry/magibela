@@ -4,14 +4,18 @@
 
     export let track;
     let isPlaying = false
+    let ellipseLength = 386.4305725097656
+    let progress = 386.4305725097656
 
 	const dispatch = createEventDispatcher();
 
 	function handleMediaControoler(e) {
         const tracksDOM = e.target.closest('.track-list .inner')
         const audioDOM = e.target.closest('.media-controller').querySelector('audio')
+        const preview_duration = 30
+        
     
-        /* console.log(!audioDOM.paused) */
+        /* console.log(tracksDOM.querySelector(".ellipse-overlay").getTotalLength()) */
         if (!audioDOM.paused) {
 
             audioDOM.pause()
@@ -26,6 +30,12 @@
 
         audioDOM.play()
         isPlaying = true
+
+        audioDOM.ontimeupdate = () => {
+            let currentTime = audioDOM.currentTime;
+            progress = ellipseLength - (currentTime / preview_duration) * ellipseLength 
+            console.log(progress)
+        }
 	}
     
 
@@ -33,6 +43,7 @@
 
 <style>
     .track {
+
         display: grid;
         grid-template-columns: 4.66rem 1rem 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -116,7 +127,11 @@
              <source src={track.preview_url} type="audio/ogg" />
             Your browser does not support the audio element.
         </audio> 
-        <MediaController isPlaying={isPlaying} on:click />
+        <MediaController 
+            progress={progress}
+            ellipseLength={ellipseLength}
+            isPlaying={isPlaying}
+            on:click />
 
     </figure>
 
