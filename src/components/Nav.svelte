@@ -4,10 +4,29 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
+		/* border-bottom: 1px solid rgba(255,62,0,0.1); */
 		font-weight: 300;
-		padding: 0 1em;
+		padding: .5em 1em;
+        width: 100%;
+        /* background-color: rgba(255, 255, 255, .03); */
+
+        position: fixed;
+        top: 0
 	}
+    div.logo {
+		font-weight: 400;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+        /* background-color: red */
+    }
+
+    nav .wrapper  {
+    margin: 0 auto;
+        max-width: 68rem;
+        display: flex;
+        justify-content: space-between
+    }
 
 	ul {
 		margin: 0;
@@ -49,7 +68,8 @@
 </style>
 
 <nav>
-    <div class="logo">Magibela</div>
+    <div class="wrapper">
+    <div class="logo"><h2>MaGibela</h2></div>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
@@ -60,4 +80,6 @@
 		     the blog data when we hover over the link or tap it on a touchscreen 
 		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>-->
 	</ul>
+
+    </div>
 </nav>

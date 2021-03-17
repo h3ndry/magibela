@@ -6,7 +6,8 @@
 <style>
 
     footer {
-        padding: 3rem 0;
+        padding-top: 3.5rem;
+        font-weight: 300;
         background: var(--bg-color-2)
         
     }
@@ -20,6 +21,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: 1fr 1rem; */
     }
 
     .link {
@@ -29,7 +31,7 @@
     }
 
     .wrapper > p {
-        padding: 2rem;
+        padding-top: 2rem;
         text-align: center;
         grid-column: 1 / -1;
     }
@@ -61,7 +63,7 @@
                 <li><a href="http://www.url.com" target="_blank">Instagram</a></li>
             </ul>
         </div>
-    <p>Made with love by Hendry Khoza</p>
+    <p>Made with love by <a href="wwww.hendry.xyz" target="_blank">Hendry Khoza</a></p>
 
     </div>
 </footer>
