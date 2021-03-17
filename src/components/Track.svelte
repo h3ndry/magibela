@@ -17,7 +17,6 @@
     
         /* console.log(tracksDOM.querySelector(".ellipse-overlay").getTotalLength()) */
         if (!audioDOM.paused) {
-
             audioDOM.pause()
             isPlaying = false
 
@@ -34,10 +33,17 @@
         audioDOM.ontimeupdate = () => {
             let currentTime = audioDOM.currentTime;
             progress = ellipseLength - (currentTime / preview_duration) * ellipseLength 
-            console.log(progress)
         }
+
+        /* if (audioDOM.ontimeupdate){ */
+        /* console.log("is display") */
+        /* } else { */
+        /* console.log("whast happering") */
+        /* } */
 	}
     
+    let track_img = track.album.images[1]
+    console.log(track)
 
 </script>
 
@@ -45,9 +51,9 @@
     .track {
 
         display: grid;
-        grid-template-columns: 4.66rem 1rem 2fr 1fr;
+        grid-template-columns: 5.25rem 1rem 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-column-gap: 1rem;
+        grid-column-gap: 1.5rem;
 
         min-height: 8rem;
         padding: 1rem 2rem;
@@ -66,8 +72,22 @@
 
         width: 5.25rem;
         height: 5.25rem;
+        position: relative;
         border-radius: 15px;
+        overflow: hidden;
         background: var(--bg-color-1) }
+    
+    .track-image img {
+        width: 110%;
+        transform: translateX(-5%);
+    }
+    .track-image .overlay {
+        position: absolute;
+        width: 5.25rem;
+        height: 5.25rem;
+        opacity: .3;
+        background: var(--bg-color-1)
+    }
 
     .media-controller{
         grid-column: 4 / -1;
@@ -90,7 +110,7 @@
         padding: 0;
         margin: 0;
         opacity: .8;
-        background-color: var(--bg-color-1);
+        /* background-color: var(--bg-color-1); */
         align-self: center;
         grid-column: 2 / span 2; }
 
@@ -114,17 +134,24 @@
 </style>
 
 <div class="track">
-    <div class="track-image"></div>
+    <div class="track-image">
+        <div class="overlay"></div>
+        <img src={track_img.url} alt={track.album.album_type} />
+    </div>
 
-    <h3 class="artist-name">&nbsp;</h3>
-    <h3 class="track-name">&nbsp;</h3>
+    <h3 class="artist-name">{track.name}</h3>
+    <h3 class="track-name">ft blah blah</h3>
 
     <span class="icon"></span>
     <span class="icon"></span>
 
     <figure on:click={handleMediaControoler} class="media-controller"> 
-         <audio>
-             <source src={track.preview_url} type="audio/ogg" />
+         <audio kind="caption">
+             <source
+                src={track.preview_url}
+                type="audio/ogg"
+                kind="caption"
+             />
             Your browser does not support the audio element.
         </audio> 
         <MediaController 
