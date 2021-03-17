@@ -77,7 +77,7 @@ function handleClick(e) {
         min-height: 29.375rem;
         padding: 4rem 0; }
 
-    .inner{
+    .wrapper{
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -90,7 +90,7 @@ function handleClick(e) {
 
 
 <div class="track-list">
-    <div class="inner">
+    <div class="wrapper">
         <h2>Top Songs on Spotify</h2>
         <button>show all</button>
 
