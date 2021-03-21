@@ -1,5 +1,5 @@
 <script charset="utf-8">
-   import MediaController from './media-controller.svelte' 
+   import MediaController from './Media_Controller.svelte' 
     import { createEventDispatcher } from 'svelte';
 
     export let track;

@@ -9,6 +9,7 @@
 		padding: .5em 1em;
         width: 100%;
         /* background-color: rgba(255, 255, 255, .03); */
+        z-index: 99;
 
         position: fixed;
         top: 0
