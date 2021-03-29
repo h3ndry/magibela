@@ -1,6 +1,12 @@
+<script>
+    import HalfSquare from './shared/Half_Square.svelte'
+
+</script>
+
 <style>
     .about-overview {
         min-height: 40vh;
+        position: relative;
         /* background-color: var(--bg-color-2); */
           /* display: grid; */
           /* justify-content: center; */
@@ -20,7 +26,9 @@
 
 
 <div class="about-overview">
+    <HalfSquare />
     <div class="wrapper">
+
 
     <h2>About Overview</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

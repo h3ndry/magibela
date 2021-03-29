@@ -64,6 +64,7 @@
 	a {
 		text-decoration: none;
 		padding: 1em 0.5em;
+        text-transform: capitalize;
 		display: block;
 	}
 </style>

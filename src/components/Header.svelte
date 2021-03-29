@@ -1,6 +1,10 @@
 <script lang="ts">
     import TopLeft from './shared/Top_Left.svelte'
     import Circle from './shared/Circle.svelte'
+	import HeaderImg1 from '../../static/images/header_1.jpg';
+	import HeaderImg2 from '../../static/images/header_2.jpg';
+	import HeaderImg3 from '../../static/images/header_3.jpg';
+	import HeaderImg4 from '../../static/images/header_4.jpg';
 
 </script>
 
@@ -14,11 +18,9 @@
         height: 80vh }
 
     h3 {
-
         text-transform: capitalize;
         font-size: 1.4rem;
-        line-height: 1.4;
-    }
+        line-height: 1.4; }
 
     h3.hero-text {
         margin-bottom: 4rem;
@@ -54,18 +56,38 @@
         z-index: 1;
     }
 
+    img {
+        width: 100%;
+    }
+    .wrapper {
+        position: relative;
+
+    }
+
 </style>
 
 <header>
     <TopLeft />
 
-    <Circle> Image </Circle>
-    <Circle> Image </Circle>
-    <Circle> Image </Circle>
-    <Circle> Image </Circle>
-
-
     <div class="wrapper">
+
+        <Circle height={16.875} right={-1} top={-6} > 
+        <img alt="Success Kid" src="{HeaderImg1}">
+    </Circle>
+
+    <Circle height={7.875} right={20} top={-5} > 
+        <img alt="Success Kid" src="{HeaderImg2}">
+    </Circle>
+    
+    <Circle height={10} right={15} top={8} > 
+        <img alt="Success Kid" src="{HeaderImg3}">
+    </Circle>
+    
+    <Circle height={7.875} right={-1} top={15} > 
+        <img alt="Success Kid" src="{HeaderImg4}">
+    </Circle> 
+
+
         <div class="content">
             <h3 class="hero-text">To you, Who listen to my musice, You save my life and I want to let you. I can not Thank you enought</h3>
             <div class="stores">
