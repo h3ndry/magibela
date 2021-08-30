@@ -7,7 +7,7 @@
 <style></style>
 
 <svelte:head>
-	<title>Magibela Website</title>
+	<title>Home - Magibela Website</title>
 </svelte:head>
 
 <Header />

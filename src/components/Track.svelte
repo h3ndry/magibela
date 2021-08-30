@@ -146,7 +146,8 @@
     <span class="icon"></span>
 
     <figure on:click={handleMediaControoler} class="media-controller"> 
-         <audio kind="caption">
+         <audio>
+	 <track kind="captions" />
              <source
                 src={track.preview_url}
                 type="audio/ogg"
@@ -154,6 +155,7 @@
              />
             Your browser does not support the audio element.
         </audio> 
+
         <MediaController 
             progress={progress}
             ellipseLength={ellipseLength}

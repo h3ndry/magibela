@@ -1,7 +1,25 @@
+<script>
+import TopLeft from '../components/shared/Top_Left.svelte'
+
+</script>
+
+<style>
+    header {
+        position: relative;
+        padding-top: 8rem;
+          /* display: grid; */
+          /* justify-content: center; */
+          /* align-content: center; */
+        height: 80vh }
+
+</style>
+
 <svelte:head>
-	<title>About</title>
+	<title>About - Magibela Website</title>
 </svelte:head>
 
-<h1>About this site</h1>
+<header>
 
-<p>This is the 'about' page. There's not much here.</p>
+    <TopLeft />
+
+</header>

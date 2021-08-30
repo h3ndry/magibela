@@ -1,7 +1,25 @@
+<script>
+import TopLeft from '../components/shared/Top_Left.svelte'
+
+</script>
+
+<style>
+ .header {
+     min-height: 40rem;
+ }
+
+</style>
+
 <svelte:head>
-	<title>Contact</title>
+	<title>Contact - Magibela Website</title>
 </svelte:head>
+
+<div class="header">
+
+    <TopLeft />
 
 <h1>Contact this site</h1>
 
-<p>This is the contact page the will more information here</p>
+<p>This is the 'about' page. There's not much here.</p>
+
+</div>

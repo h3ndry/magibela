@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1023.4562"
    height="1582.4248"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
    version="1.0"
    sodipodi:docname="magibela-website.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <g
      style="fill:#222222;fill-opacity:1"
      id="g2000"
@@ -847,9 +847,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.2622549"
-     inkscape:cx="1100.2777"
-     inkscape:cy="-1312.0729"
+     inkscape:zoom="0.74246212"
+     inkscape:cx="-336.04408"
+     inkscape:cy="-1510.5148"
      inkscape:document-units="px"
      inkscape:current-layer="g1999-5"
      showgrid="false"
@@ -866,7 +866,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="0">
     <sodipodi:guide
        position="31.879042,566.25279"
        orientation="1,0"
@@ -1139,7 +1140,7 @@
            y="919.42688">Top Songs on Spotify</tspan></text>
       <g
          id="g1362-0"
-         transform="matrix(0.59192934,0,0,0.59192934,1084.4211,1126.5154)">
+         transform="matrix(0.59192934,0,0,0.59192934,1088.5566,1121.196)">
         <rect
            style="opacity:1;fill:#282828;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
            id="rect1215-3"
@@ -1152,58 +1153,176 @@
         <rect
            style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
            id="rect1323-0"
-           width="120"
-           height="120"
-           x="-1576.1107"
-           y="-231.8949"
-           rx="15.328125"
+           width="165.47304"
+           height="165.47304"
+           x="-1603.0565"
+           y="-249.70183"
+           rx="21.136597"
            inkscape:label="track-avata" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#f9f9f9;fill-opacity:1;stroke:none"
-           x="-1428.1448"
-           y="-195.81607"
+           x="-1395.3801"
+           y="-195.98799"
            id="text1329-4"
            inkscape:label="artist-name"><tspan
              sodipodi:role="line"
              id="tspan1327-4"
-             x="-1428.1448"
-             y="-195.81607">MaGibela SA</tspan></text>
+             x="-1395.3801"
+             y="-195.98799">MaGibela SA</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.25;font-family:sans-serif;fill:#f9f9f9;fill-opacity:1;stroke:none"
-           x="-1426.2803"
-           y="-166.66121"
+           x="-1396.0573"
+           y="-165.15848"
            id="text1329-6-4"
            inkscape:label="track-name"><tspan
              sodipodi:role="line"
              id="tspan1327-2-4"
-             x="-1426.2803"
-             y="-166.66121">Siyancimbiza</tspan></text>
-        <ellipse
-           style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
-           id="path1353-7"
-           cx="-1072.8379"
-           cy="-171.89491"
-           rx="41.216496"
-           ry="40.950508"
-           inkscape:label="media-controller" />
+             x="-1396.0573"
+             y="-165.15848">Siyancimbiza</tspan></text>
         <ellipse
            style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
            id="path1353-0-63"
-           cx="-1411.781"
-           cy="-132.27158"
+           cx="-1381.8201"
+           cy="-125.73212"
            rx="9.1936436"
            ry="9.1343126"
            inkscape:label="media-controller" />
         <ellipse
            style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
            id="path1353-0-6-1"
-           cx="-1377.5967"
-           cy="-132.27158"
+           cx="-1304.6268"
+           cy="-130.70728"
            rx="9.1936436"
            ry="9.1343126"
            inkscape:label="media-controller" />
+        <g
+           id="g595"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g597"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g599"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g601"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g603"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g605"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g607"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g609"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g611"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g613"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g615"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g617"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g619"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g621"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g623"
+           transform="matrix(0.93164727,0,0,0.93164727,-1151.8708,-238.07883)">
+</g>
+        <g
+           id="g2221"
+           transform="matrix(0.88297067,0,0,0.88297067,-1123.6707,-235.33412)">
+	<path
+   style="fill:#ff3e00;fill-opacity:1;stroke:none;stroke-opacity:1"
+   d="M 142.411,68.9 C 141.216,31.48 110.968,1.233 73.549,0.038 53.188,-0.608 34.139,7.142 20.061,21.677 6.527,35.65 -0.584,54.071 0.038,73.549 c 1.194,37.419 31.442,67.667 68.861,68.861 0.779,0.025 1.551,0.037 2.325,0.037 19.454,0 37.624,-7.698 51.163,-21.676 13.534,-13.972 20.646,-32.394 20.024,-51.871 z m -30.798,41.436 c -10.688,11.035 -25.032,17.112 -40.389,17.112 -0.614,0 -1.228,-0.01 -1.847,-0.029 C 39.845,126.476 15.973,102.604 15.029,73.071 14.538,57.689 20.151,43.143 30.835,32.113 41.523,21.078 55.867,15.001 71.224,15.001 c 0.614,0 1.228,0.01 1.847,0.029 29.532,0.943 53.404,24.815 54.348,54.348 0.491,15.382 -5.123,29.928 -15.806,40.958 z"
+   id="path2217" />
+
+	<path
+   style="fill:#ff3e00;fill-opacity:1"
+   d="M 94.585,67.086 63.001,44.44 c -3.369,-2.416 -8.059,-0.008 -8.059,4.138 v 45.293 c 0,4.146 4.69,6.554 8.059,4.138 L 94.584,75.362 c 2.834,-2.031 2.834,-6.244 10e-4,-8.276 z"
+   id="path2219" />
+
+</g>
+        <g
+           id="g2225"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2227"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2229"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2231"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2233"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2235"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2237"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2239"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2241"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2243"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2245"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2247"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
+        <g
+           id="g2249"
+           transform="matrix(1.6893908,0,0,1.6893908,-1257.7444,-270.22116)">
+</g>
       </g>
       <g
          id="g1362-2-7"
