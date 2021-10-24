@@ -4,29 +4,22 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
+	import Header from '$lib/Header.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
+
+
+<Header />
+
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
 
-		to your new<br />SvelteKit app
-	</h1>
+more home page staff
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
 
-	<Counter />
 </section>
 
 <style>
