@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+	/* import Counter from '$lib/Counter.svelte'; */
 	import Header from '$lib/Header.svelte';
 </script>
 
@@ -11,16 +11,9 @@
 	<title>Home</title>
 </svelte:head>
 
-
-
 <Header />
 
-<section>
-
-more home page staff
-
-
-</section>
+<section>more home page staff</section>
 
 <style>
 	section {

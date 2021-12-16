@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 @import '@fontsource/fira-mono';
 
 :root {
@@ -20,13 +22,38 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--primary-color);
-    color: var(--pure-white);
+	color: var(--pure-white);
 }
 
 #svelte {
+	@include flex($direction: column);
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+	position: relative;
+	overflow-x: hidden;
+}
+
+main {
+	@include flex($direction: column);
+	padding: 1rem;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+footer {
+	@include flex($direction: column, $justify: center, $align: center);
+	padding: 40px;
+}
+
+footer a {
+	font-weight: bold;
+}
+
+@media (min-width: 480px) {
+	footer {
+		padding: 40px 0;
+	}
 }
 
 h1,
