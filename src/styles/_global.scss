@@ -34,20 +34,12 @@ body {
 
 main {
 	@include flex($direction: column);
+	min-height: 100vh;
 	padding: 1rem;
 	width: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
 	box-sizing: border-box;
-}
-
-footer {
-	@include flex($direction: column, $justify: center, $align: center);
-	padding: 40px;
-}
-
-footer a {
-	font-weight: bold;
 }
 
 @media (min-width: 480px) {
@@ -65,6 +57,7 @@ p {
 
 p {
 	line-height: 1.5;
+	color: white;;
 }
 
 a {
