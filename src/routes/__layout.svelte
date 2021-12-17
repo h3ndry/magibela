@@ -1,8 +1,21 @@
 <script lang="ts">
-	import Nav from '$lib/Navbar/Navbar.svelte';
+	import Navbar from '$lib/Navbar/Navbar.svelte';
+	import TopRight from '$lib/top_right.svelte';
+
 </script>
 
-<Nav />
+
+
+<Navbar />
+
+<TopRight />
+
+<!--
+<div>
+{@html Top}
+</div>
+-->
+
 
 <main>
 	<slot />

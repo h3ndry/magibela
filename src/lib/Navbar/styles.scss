@@ -1,5 +1,12 @@
 @use 'src/styles/mixins' as *;
 
+.navbar {
+	position: sticky;
+	top: 0;
+	background-image: filter(10px);
+
+}
+
 .inner {
 	@include flex($justify: between, $align: center);
 	width: 90%;

@@ -9,7 +9,7 @@
 
 </script>
 
-<div>
+<div class="navbar">
 	<div class="inner">
 		<a class="logo" href="/"> MaGibela </a>
 
