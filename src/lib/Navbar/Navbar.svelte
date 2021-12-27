@@ -34,7 +34,6 @@
 					<li class:active={$page.path === '/contact'}>
 						<a sveltekit:prefetch href="/contact">Contact</a>
 					</li>
-					<!--<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></li>-->
 				</ul>
 			</nav>
 		</aside>
@@ -51,7 +50,6 @@
 				<li class:active={$page.path === '/contact'}>
 					<a sveltekit:prefetch href="/contact">Contact</a>
 				</li>
-				<!--<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></li>-->
 			</ul>
 		</nav>
 	</div>

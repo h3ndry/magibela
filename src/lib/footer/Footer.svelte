@@ -32,7 +32,7 @@
 			</ul>
 		</div>
 
-		<p>Made with love by <a href="h3ndry.me">Hendry</a></p>
+		<p>Made with love by <a href="">Hendry</a></p>
 	</div>
 </footer>
 
