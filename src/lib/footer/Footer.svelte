@@ -27,7 +27,7 @@
 			<ul>
 				<li><a href="#">Apple Music </a></li>
 				<li><a href="#">Spotify </a></li>
-				<li><a href="#">Google Music </a></li>
+				<li><a href="#">Youtube Music</a></li>
 				<li><a href="#">GoogleMusic </a></li>
 			</ul>
 		</div>
