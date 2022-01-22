@@ -1,34 +1,15 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
-
-<script lang="ts">
-	import Hero from '$lib/Hero/Hero.svelte';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
-<Hero />
-
-
-
-<section class="about" >
-
-<h3>About My Life</h3>
-
-<p> 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempo  r incididunt ut labore et dolore magna 
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-</p>
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    width="25.998896mm"
    height="102.13882mm"
-   viewBox="0 0 25.998896 102.13882" >
+   viewBox="0 0 25.998896 102.13882"
+   version="1.1"
+   id="svg12696"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs12693">
     <clipPath
@@ -98,10 +79,3 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
        r="12.437258" />
   </g>
 </svg>
-
-
-</section>
-
-<style  lang="scss">
-    @use "src/styles/pages/home";
-</style>

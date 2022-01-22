@@ -1,0 +1,132 @@
+@use 'src/styles/mixins' as *;
+
+.hero {
+
+	max-width: 1024px;
+    margin: 0 auto;
+	padding-top: 4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.text {
+	h3 {
+		width: 80%;
+		font-size: 1.8rem;
+		font-weight: normal;
+		border-left: 8px var(--accent-color) solid;
+		padding-left: 1rem;
+	}
+
+	.links {
+		margin-top: 4rem;
+	}
+
+	.links svg {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.apple-music path,
+	.spotify-logo path {
+		fill: white;
+	}
+}
+
+.images {
+	position: relative;
+	// background-color: red;
+	// justify-self: center;
+
+	display: flex;
+	img {
+		border-radius: 50%;
+		position: absolute;
+		width: 100%;
+	}
+}
+
+.images img:nth-child(1) {
+	position: unset;
+	width: 16.875rem;
+	margin: 0 auto;
+	transform: translateX(20%);
+}
+
+.images img:nth-child(2) {
+	width: 7.9375rem;
+	left: 0;
+	top: -3.9687rem;
+}
+
+.images .img {
+    position: absolute;
+	left: 0rem;
+	bottom: 4rem;
+
+    img {
+        width: 10rem;
+    }
+    .solid, .gradient, .gradient-2 {
+        display: block;
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        z-index: 3;
+        border-radius: 50%;
+    }
+
+    .solid {
+        background-color: var(--accent-color);
+        bottom: -10rem;
+    }
+
+    .gradient {
+        background-image: linear-gradient(white, transparent);
+        bottom: -2rem;
+        left: 4rem;
+    }
+}
+
+.gradient-2 {
+        background-image: linear-gradient(white, transparent);
+        right: -2rem;
+}
+
+.images img:nth-child(4) {
+	width: 7.9375rem;
+	right: 5rem;
+	bottom: -12.9687rem;
+}
+
+.st0 {
+	fill: none;
+}
+.st1 {
+	fill: #f4481e;
+}
+.st2 {
+	fill: url(#SVGID_1_);
+}
+.st3 {
+	opacity: 0.1;
+	fill: #ffffff;
+	enable-background: new;
+}
+.st4 {
+	fill: #ffd119;
+}
+.st5 {
+	fill: #ff8c00;
+}
+.st6 {
+	fill: url(#SVGID_2_);
+}
+.st7 {
+	fill: #fafafa;
+}
+.st8 {
+	opacity: 0.3;
+	fill: #ffffff;
+	enable-background: new;
+}

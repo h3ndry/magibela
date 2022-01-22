@@ -37,7 +37,7 @@ main {
 	min-height: 100vh;
 	padding: 1rem;
 	width: 100%;
-	max-width: 1024px;
+	// max-width: 1024px;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
@@ -47,6 +47,15 @@ main {
 		padding: 40px 0;
 	}
 }
+
+
+	// section {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	flex: 1;
+	// }
 
 h1,
 h2,
